@@ -7,11 +7,15 @@
     <title>@yield("title", "Hello Laravel World")</title>
     @vite('resources/js/app.js')
 </head>
-<body>
+<body class"">
 
-    @include('partials.header')
+        
+        @include('partials.header')
+    <main>
+        @yield('content')
+    </main>
+
     
-    @yield("content")
-
+        @vite('resources/js/app.js')
 </body>
 </html>
